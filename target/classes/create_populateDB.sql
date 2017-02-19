@@ -1,4 +1,4 @@
-CREATE TABLE `product` (
+CREATE TABLE IF NOT EXISTS `test`.`product` (
   `id` varchar(5) NOT NULL UNIQUE,
   `name` varchar(45) NOT NULL,
   `image` varchar(100) NOT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE `product` (
   PRIMARY KEY (`id`)
 )
 
-CREATE TABLE `test`.`commerceitem` (
+CREATE TABLE IF NOT EXISTS CREATE TABLE `test`.`commerceitem` (
   `id` varchar(5) NOT NULL UNIQUE,
   `product_id` varchar(5) NOT NULL,
   `quantity` integer NOT NULL,
